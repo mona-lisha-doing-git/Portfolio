@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monalisha's Portfolio</title>
+
+    <!-- CSS file linked -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google font: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- For using Font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="left">I am <b>Monalisha Kalita</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <!-- For mode change -->
+                    <li><div class="mode">
+                        <i class="fa-regular fa-moon fa-lg" style="color: #ffffff;"></i>
+                    </div>  </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+           <div class="description">
+             <img src="profileImg.jpeg" alt="">
+           </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Monalisha Kalita","An Undergraduate", "A Web Developer", "A Passionate Learner"],
+        typeSpeed: 50,
+      });
+    </script>
 </body>
 </html>
