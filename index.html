@@ -25,7 +25,7 @@
             <div class="left">I am <b>Monalisha Kalita</b></div>
             <div class="right">
                 <ul>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#about">About Me</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
@@ -42,6 +42,21 @@
         <section class="about">
            <div class="description">
              <img src="profileImg.jpeg" alt="">
+             <div class="info-box">
+                <div class="text">
+                    Hello, I am <br><b><span style="color: #E34F4F;" id="element"></b></span>
+                    <p style="font-size: 1rem;">
+                    I enjoy building responsive and user-friendly <br>
+                    web applications. <br>
+                    I specialize in front-end development and love turning ideas into <br>
+                    reality using HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+                <div class="btn">
+                    <button id="btn1" class="btn">Visit LinkedIn</button>
+                    <button id="btn2" class="btn">Visit Github</button>
+                </div>
+             </div>
            </div>
         </section>
     </main>
@@ -50,7 +65,7 @@
     <script>
       var typed = new Typed("#element", {
         strings: ["Monalisha Kalita","An Undergraduate", "A Web Developer", "A Passionate Learner"],
-        typeSpeed: 50,
+        typeSpeed: 60,
       });
     </script>
 </body>

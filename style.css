@@ -6,6 +6,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    color: #182343;
 }
 
 nav{
@@ -43,5 +44,13 @@ nav ul li a:hover{
 img{
     position: relative;
     height: 500px;
+    left: 23%;
+    top: 15rem;
+}
 
+.text{
+    position: relative;
+    font-size: 2rem;
+    left: 50%;
+    bottom: 15rem;
 }
