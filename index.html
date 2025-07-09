@@ -22,25 +22,33 @@
     <header>
         <!-- Navigation Bar -->
         <nav>
-            <div class="left">I am <b>Monalisha Kalita</b></div>
+            <div class="left">
+                <a href="#about">I am <b>Monalisha Kalita</b></a>
+            </div>
             <div class="right">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact Me</a></li>
                     <!-- For mode change -->
                     <li><div class="mode">
                         <i class="fa-regular fa-moon fa-lg" style="color: #ffffff;"></i>
                     </div>  </li>
+                    <!-- Contact me button -->
+                     <li>
+                    <button class="contact">Contact 
+                        <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </button>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="about">
+        <section class="home">
            <div class="description">
              <img src="profileImg.jpeg" alt="">
              <div class="info-box">
@@ -49,30 +57,43 @@
                     <p style="font-size: 1rem;">
                     I enjoy building responsive and user-friendly <br>
                     web applications. <br>
-                    I specialize in front-end development and love turning ideas into <br>
+                    I specialize in front-end development and love turning ideas into
                     reality using HTML, CSS, and JavaScript.
                     </p>
                 </div>
                 <div class="button">
                     <button id="btn1" class="btn">Download CV</button>
                     <button id="btn2" class="btn">Contact</button>
+                </div>
                     <div class="socials">
                     <a id="L" class="social" href="https://www.linkedin.com/in/monalisha-kalita-ab921b252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a>
+                        <i class="fa-brands fa-linkedin fa-2xl"></i></a>
                     <a id="G" class="social" href="https://github.com/mona-lisha-doing-git" target="_blank">
-                        <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+                        <i class="fa-brands fa-github fa-2xl"></i>
                     </a>
                     </div>
-                </div>
              </div>
            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-me">
+                <img src="aboutme.jpeg" alt="">
+                Introduction
+                <h1>About me</h1>
+                MERN Stack Enthusiast with a strong focus on frontend development. I'm currently a 
+                Computer Science student, eager to enter the professional world to explore new technologies, 
+                sharpen my existing skills, and develop new ones along the way. 
+                Driven by a constant desire to learn and improve in every step of the journey.
+                I embrace every opportunity to expand my knowledge and grow as a developer.
+            </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
       var typed = new Typed("#element", {
-        strings: ["Monalisha Kalita","An Undergraduate", "A Web Developer", "A Passionate Learner"],
+        strings: ["An Undergraduate Student", "A Web Developer", "A Passionate Learner","Monalisha Kalita"],
         typeSpeed: 60,
       });
     </script>

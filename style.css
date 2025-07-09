@@ -1,6 +1,7 @@
 *{
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,9 +10,15 @@ body{
     color: #182343;
 }
 
+/* Navigation-bar */
 nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     height: 80px;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: #182343;
@@ -20,6 +27,7 @@ nav{
 
 nav ul{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -37,60 +45,138 @@ nav ul li a:hover{
     color: #E34F4F;
 }
 
-.left{
+.left a{
     font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
 }
 
-.info-box{
-
+.left a:hover{
+    color: #2790e0;
 }
 
-img{
-    position: relative;
-    height: 400px;
-    left: 25%;
-    top: 10rem;
+.contact{
+    padding: 10px 24px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3rem;
+    background-color: transparent;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.text{
-    position: relative;
-    font-size: 2rem;
-    left: 50%;
-    bottom: 14rem;
-}
-
-.button{
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    bottom: 12rem;
-}
-
-.btn{
-    padding: 15px;
-    border: 2px solid #182343;
+.contact:hover{
+    background-color: white;
     color: #182343;
-    border-radius: 6px;
 }
 
-.btn:hover{
+.contact i{
+    font-size: 1rem;
+    color: inherit;
+}
+
+/* Home */
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 10rem 2rem;
+}
+
+.description img {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid #182343;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 500px;
+}
+
+.text {
+    font-size: 2rem;
+    color: #182343;
+    text-align: center;
+}
+
+.text span {
+    color: #E34F4F;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 25%;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 2px solid #182343;
+    border-radius: 6px;
+    background-color: transparent;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn1{
     background-color: #182343;
     color: white;
 }
 
+#btn2{
+    background-color: white;
+    color: #182343;
+}
+
+#btn1:hover {
+    background-color: white;
+    color: #182343;
+}
+#btn2:hover {
+    background-color: #182343;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding-left: 41%;
+}
+
 .social{
-    font-size: 1.5rem;
-    /* transition: 0.2s ease-in-out; */
-    position: relative;
-    top: 2rem;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in;
+    color: #2790e0;
 }
 
-#L{
-    position: relative;
-    left: 16%;
+.social:hover{
+    transform: scale(1.2);
 }
 
-#G{
-    position: relative;
-    left: 45%;
-}
+/* About */
+
