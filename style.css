@@ -41,16 +41,56 @@ nav ul li a:hover{
     font-size: 1.5rem;
 }
 
+.info-box{
+
+}
+
 img{
     position: relative;
-    height: 500px;
-    left: 23%;
-    top: 15rem;
+    height: 400px;
+    left: 25%;
+    top: 10rem;
 }
 
 .text{
     position: relative;
     font-size: 2rem;
     left: 50%;
-    bottom: 15rem;
+    bottom: 14rem;
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    bottom: 12rem;
+}
+
+.btn{
+    padding: 15px;
+    border: 2px solid #182343;
+    color: #182343;
+    border-radius: 6px;
+}
+
+.btn:hover{
+    background-color: #182343;
+    color: white;
+}
+
+.social{
+    font-size: 1.5rem;
+    /* transition: 0.2s ease-in-out; */
+    position: relative;
+    top: 2rem;
+}
+
+#L{
+    position: relative;
+    left: 16%;
+}
+
+#G{
+    position: relative;
+    left: 45%;
 }
