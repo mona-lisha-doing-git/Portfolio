@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body{
@@ -10,11 +12,14 @@ body{
     color: #182343;
 }
 
-/* Navigation-bar */
-nav{
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+/* Navigation-bar */
+nav{
     height: 80px;
     width: 100%;
     display: flex;
@@ -179,4 +184,54 @@ nav ul li a:hover{
 }
 
 /* About */
+#about{
+    padding-bottom: 250px;
+    padding-top: 250px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.intro h1{
+    font-size: 2.5rem;
+    color: #182343;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 10rem;
+    padding-top: 4rem;
+}
+
+.about-me img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-desp{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.abt-btn{
+    padding: 50px 50px;
+    border: 2px solid #182343;
+    border-radius: 6px;
+    background-color: transparent;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+}

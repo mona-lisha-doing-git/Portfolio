@@ -29,7 +29,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About me</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Experience</a></li>
                     <!-- For mode change -->
@@ -48,7 +48,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section id="home">
            <div class="description">
              <img src="profileImg.jpeg" alt="">
              <div class="info-box">
@@ -76,16 +76,33 @@
            </div>
         </section>
 
-        <section class="about">
+        <section id="about">
+            <div class="intro">
+                <p>Introduction</p>
+                <h1>About me.</h1>
+            </div>
             <div class="about-me">
                 <img src="aboutme.jpeg" alt="">
-                Introduction
-                <h1>About me</h1>
-                MERN Stack Enthusiast with a strong focus on frontend development. I'm currently a 
-                Computer Science student, eager to enter the professional world to explore new technologies, 
-                sharpen my existing skills, and develop new ones along the way. 
-                Driven by a constant desire to learn and improve in every step of the journey.
+                <div class="about-desp">
+                <p>Frontend Developer with a growing interest in the MERN stack <br>
+                and a strong focus on building responsive web applications. <br>
+                I'm currently a Computer Science student, <br>
+                eager to enter the professional world to explore new technologies, <br>
+                sharpen my existing skills, and develop new ones along the way. <br>
+                Always eager to learn and improve in every step of the journey. <br>
                 I embrace every opportunity to expand my knowledge and grow as a developer.
+                </p>
+                <div class="about-btn">
+                    <div class="about-btn1">
+                        <button id="education" class="abt-btn">Education</button>
+                        <button id="dsa" class="abt-btn">DSA</button>
+                    </div>
+                    <div class="about-btn2">
+                        <button id="languages" class="abt-btn">Machine Learning</button>
+                        <button id="frontend" class="abt-btn">Frontend Developer</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
