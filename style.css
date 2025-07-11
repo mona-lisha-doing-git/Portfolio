@@ -132,7 +132,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding-left: 25%;
+    padding-left: 23%;
 }
 
 .btn {
@@ -149,11 +149,13 @@ nav ul li a:hover{
 #btn1{
     background-color: #182343;
     color: white;
+    gap: 2px;
 }
 
 #btn2{
     background-color: white;
     color: #182343;
+    gap: 2px;
 }
 
 #btn1:hover {
@@ -248,7 +250,6 @@ nav ul li a:hover{
 }
 
 /* Project */
-
 .projects-intro{
     display: flex;
     justify-content: center;
@@ -277,25 +278,66 @@ nav ul li a:hover{
     width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid #182343;
     border-radius: 2rem;
     font-size: smaller;
-    padding: 20px;
+    padding: 20px 0 50px 0;
     transition: 350ms ease-in-out;
 }
-.project-box img{
-    width: 150px;
-    object-fit: cover;
-    border-radius: 6px;
+
+#tw{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('typing_world.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#ac{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('amazon_clone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#ttt{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('ttt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#rps{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('rps.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.project-btn{
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #182343;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.project-btn:hover{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .project-box button{
     padding: 10px 24px;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background-color: #182343;
+    border: 2px solid #182343;
+    color: #182343;
+    background-color: white;
     border-radius: 3rem;
     font-weight: 500;
     width: fit-content;
@@ -304,16 +346,31 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.1s ease-in-out;
 }
 
 .project-box:hover{
-    background-color: #182343;
-    color: white;
     transform: scale(1.2);
 }
 .project-box button:hover{
-    background-color: #ffffff;
-    color: #182343;
+    background-color: #182343;
+    color: white;
+}
+
+.project-desc{
+    background: linear-gradient(rgba(1, 1, 16, 0.3), rgba(1, 5, 19, 0.3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-desc:hover{
+    background: linear-gradient(rgba(1, 1, 16, 0.7), rgba(1, 5, 19, 0.7));
 }
 
 /* Experience */
