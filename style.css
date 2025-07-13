@@ -389,3 +389,52 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+
+.exp-line{
+    background-color: #182343;
+    height: 2px;
+    /* width: 80vw; */
+    /* margin-left: 10%; */
+    display: flex;
+    justify-content: space-around;
+}
+.vertical{
+    background-color: #182343;
+    height: 93px;
+    width: 1px;
+    margin: 0 100px;
+}
+.exp-year{
+    height: 2px;
+    /* width: 80vw; */
+    margin: 65px 0;
+    /* margin-left: 10%; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.ver-title{
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+}
+
+.ver-title p{
+    font-size: 11px;
+}
+
+/* Skills */
+#skills{
+    padding: 500px 0 200px 0;
+}
+.skills-intro h1{
+    font-size: 2.5rem;
+    color: #182343;
+}
+
+.skills-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
