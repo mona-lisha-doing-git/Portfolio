@@ -32,3 +32,14 @@ document.getElementById("btn1").addEventListener("click", function () {
     alert("Incorrect password!");
   }
 });
+
+  const contactBtn = document.getElementById("btn2");
+
+  contactBtn.addEventListener("click", () => {
+    
+    document.body.classList.add("fade-out");
+
+    setTimeout(() => {
+      window.location.href = "contact.html";
+    }, 600); 
+  });

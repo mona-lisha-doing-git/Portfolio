@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Connect</title>
+    <link rel="stylesheet" href="styleForContact.css">
+
+     <!-- Google font: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- For using Font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div class="contactme-intro">
+            <p>Let's Connect</p>
+            <h1>Contact Me.</h1>
+        </div>
+        <div class="contactme-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contactme">
+                <div class="sender-info">
+                    <input type="hidden" name="access_key" value="ecac4cd4-5a88-42ee-aeb6-ecf7e830c319">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                </div>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit" class="contact">Submit Now
+                    <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 90deg;"></i>
+                </button>
+            </form>
+        </div>
+        <div class="closure">
+            <div class="clo-intro">
+                <a href="#"><h2>Monalisha Kalita.</h2>
+                <p id="text">Turning Ideas into Reality!</p>
+                </a>
+            </div>
+            <hr>
+            <div class="copy-social">
+            <div class="copyright">
+                <p>&#169; 2025, Monalisha Kalita. All rights reserved.</p>
+            </div>
+            <div class="footer-socials">
+                <ul>
+                    <li><a href="https://github.com/mona-lisha-doing-git" target="_blank">
+                        GitHub
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/monalisha-kalita-ab921b252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        LinkedIn
+                    </a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>
