@@ -22,3 +22,13 @@ window.onclick=function(event){
         modal.style.display="none";
     }
 };
+
+document.getElementById("btn1").addEventListener("click", function () {
+  const password = prompt("Enter password to download the CV:");
+  
+  if (password === "MySecret123") {
+    document.getElementById("cv-link").click();
+  } else {
+    alert("Incorrect password!");
+  }
+});

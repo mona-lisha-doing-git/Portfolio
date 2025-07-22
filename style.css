@@ -330,7 +330,7 @@ nav ul li a:hover{
     color: #182343;
     gap: 5px;
     border-radius: 10px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .project-btn:hover{
@@ -354,7 +354,7 @@ nav ul li a:hover{
 }
 
 .project-box:hover{
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 .project-box button:hover{
     background-color: #182343;
@@ -370,7 +370,7 @@ nav ul li a:hover{
     width: 300px;
     padding: 20px;
     border-radius: 2rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .project-desc:hover{
@@ -504,10 +504,18 @@ nav ul li a:hover{
 }
 
 /* Footer */
-footer{
+/* footer{
     background-color: #182343;
     color: white;
+} */
+
+footer {
+  background: linear-gradient(to top, #5a77cd 0%, #182343 100%);
+  color: white;
+  padding: 20px; 
+  text-align: center; 
 }
+
 .contactme-intro h1{
     font-size: 2.5rem;
     color: white;
@@ -589,24 +597,26 @@ footer{
 .clo-intro a{
     text-decoration: none;
     color: white;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
 }
 
 .clo-intro p{
     font-size: smaller;
-    padding-left: 20px;
 }
 
 .clo-intro a:hover{
-    color: #2790e0;
+    color: #a3b1db;
 }
 
 .footer-socials ul a{
     color: white;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
 }
 
 .footer-socials ul a:hover{
-    color: #E34F4F;
+    color: #a3b1db;
 }
 
 .footer-socials ul li{
