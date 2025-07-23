@@ -21,7 +21,7 @@
 <body>
     <header>
         <!-- Navigation Bar -->
-        <nav>
+        <nav class="nav-bar">
             <div class="left">
                 <a href="#about">I am <b>Monalisha Kalita</b></a>
             </div>
@@ -34,7 +34,7 @@
                     <li><a href="#achievements">Achievements</a></li>
                     <!-- For mode change -->
                     <li><div class="mode">
-                        <i class="fa-regular fa-moon fa-lg" style="color: #ffffff;"></i>
+                        <i id="mode-icon" class="fa-regular fa-moon fa-lg" style="color: #ffffff;"></i>
                     </div>  </li>
                     <!-- Contact me button -->
                      <li>
@@ -92,7 +92,7 @@
             <div class="about-me">
                 <img src="aboutme.jpeg" alt="">
                 <div class="about-desp">
-                <p>Frontend Developer with a growing interest in the MERN stack <br>
+                <p class="about-me-para">Frontend Developer with a growing interest in the MERN stack <br>
                 and a strong focus on building responsive web applications. <br>
                 I'm currently a Computer Science student, <br>
                 eager to enter the professional world to explore new technologies, <br>
@@ -427,7 +427,7 @@
                     <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                 </div>
                 <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <button type="submit" class="contact">Submit Now
+                <button type="submit" class="contact footer-contact">Submit Now
                     <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 90deg;"></i>
                 </button>
             </form>
