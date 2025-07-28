@@ -361,7 +361,7 @@ nav ul li a:hover{
 }
 
 .project-box:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 .project-box button:hover{
     background-color: #182343;
@@ -562,6 +562,7 @@ footer {
     font-weight: 500;
     color: #182343;
     border-radius: 20px;
+    font-size: medium;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -795,3 +796,5 @@ body.dark-mode .footer-contact:hover{
     background-color: #d6d9ec;
     color: #182343;
 }
+
+/* Responsiveness */
