@@ -562,7 +562,7 @@ footer {
     font-weight: 500;
     color: #182343;
     border-radius: 20px;
-    font-size: medium;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -797,4 +797,244 @@ body.dark-mode .footer-contact:hover{
     color: #182343;
 }
 
-/* Responsiveness */
+/* -----------------------------------Responsiveness----------------------------------- */
+#menu-toggle {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+  display: none; 
+  z-index: 1001; 
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #182343;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 50%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  body.dark-mode #nav-links{
+    background-color: #d6d9ec;
+    color: #04113a;
+    /* border: 1px solid #04113a; */
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  /* Home */
+
+/* About me */
+#about{
+    padding: 50px 0 50px 0;
+}
+.intro h1{
+    font-size: 2.5rem;
+    color: #182343;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 20px;
+}
+
+.about-me img{
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #182343;
+}
+
+.about-desp{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Projects */
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px 0 20px;
+    gap: 4rem;
+}
+
+/* Experience */
+#experience{
+    padding: 150px 0 200px 0;
+}
+.exp-container{
+    display: flex;
+    flex-direction: row;
+    margin: 65px 0;
+    padding: 0px;
+}
+.hor-line{
+    display: flex;
+    flex-direction: column;
+    background-color: #182343;
+    height: 140rem;
+    width: 2px;
+    gap: 5rem;
+    padding: 0px;
+}
+.vertical{
+    display: flex;
+    background-color: #182343;
+    height: 1px;
+    width: 93px;
+    margin: 0 100px;
+}
+.exp-year{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 20rem;
+}
+
+.ver-title{
+    font-size: 14px;
+    position: relative;
+    top: 5px;
+}
+
+.ver-title p{
+    font-size: 12px;
+}
+
+/* Achievements */
+#achievements{
+    padding: 0 0 20px 0;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+}
+.skills-intro{
+    margin-bottom: 65px;
+}
+.skills-intro h1{
+    font-size: 2.5rem;
+    color: #182343;
+}
+
+.skill-certificates{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 15rem;
+    padding: 20px;
+}
+
+.ver-line{
+    background-color: #182343;
+    height: 1px;
+    width: 93px;
+}
+
+.ver-line h3{
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+/* Footer */
+.contactme-intro h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.contactme-container{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.sender-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contactme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #182343;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactme textarea{
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.contactme button{
+    width: 400px;
+    padding-left: 150px;
+}
+
+.closure hr{
+    margin: 0 30px 0 30px;
+}
+
+.clo-intro p{
+    font-size: smaller;
+}
+
+.footer-socials ul a{
+    color: rgb(215, 239, 254);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-socials ul a:hover{
+    color: #a3b1db;
+}
+}
